@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForMen</title>
+
+    <!-- Bootstrap 5 Css -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Magnific-popup Css -->
+    <link rel="stylesheet" href="./css/plugin/magnific-popup.css">
+    <!-- CDN. Select2 Css -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- js-image-zoom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/js-image-zoom/1.1.0/js-image-zoom.min.css">
+
+
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    
+    <!-- =====================
+    --- HEADER. Start ---
+    ===================== -->
+    <header class="header-style">
+        <div class="menu-top">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                        <div class="left d-flex align-items-center justify-content-start">
+                            <ul class="menubar-main-menu_widge-box d-flex align-items-center">
+                                <li class="menubar d-block">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="./index.html" class="logo">
+                            <img src="./img/logo-FORMEN.svg" alt="logo">
+                        </a>
+
+                        <div class="right d-flex align-items-center justify-content-end">
+                            <ul class="main-menu_widge-box d-flex align-items-center">
+                                <li class="user-login d-block">
+                                    <a href="#" class="user-link">
+                                        <img src="./img/icons/Icon_user.svg" alt="icon-user" class="user-img">
+                                    </a>
+                                </li>
+                                <li class="wish-button d-block">
+                                    <a href="#" class="wish-link" id="openWishlistModal">
+                                        <img src="./img/icons/Icon_heart.svg" alt="icon-wish" class="wish-img">
+                                    </a>
+                                </li>
+                                <li class="wish-button d-block">
+                                    <a href="#" class="wish-link" id="openCartModal">
+                                        <img src="./img/icons/Icon_shopping-bag.svg" alt="bag" class="bag-img">
+                                    </a>
+                                </li>
+
+                                
+                                <li class="search-box-holder">
+                                    <form action="#0">
+                                        <div class="form-group search-box menu">
+                                            <img src="./img/icons/Icon_search.svg" alt="icon-search" class="top-serch-icon">
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальне вікно Вхід в кабінет. Start -->
+        <div class="modal-entrance">
+            <div class="modal-entrance-img">
+                <img src="./img/logo-FORMEN.svg" alt="icon-logo">
+            </div>
+            <div class="modal-dialog-entrance" style="max-width: 650px;">
+                <div class="modal-content-entrance">
+                    <div class="modal-header-entrance">
+                        <h2 class="modal-entrance-title">Вход</h2>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p class="modal-entrance-subtitle">через социальные сети</p>
+                        <div class="social-icons-entrance">
+                            <a href="#" class="social-icons-entrance-link">
+                                <img src="./img/icons/icon_facebook_login_2.svg" alt="icon-facebook">
+                            </a>
+                            <a href="#" class="social-icons-entrance-link">
+                                <img src="./img/icons/icon_twitter_login_2.svg" alt="icon-twitter">
+                            </a>
+                            <a href="#" class="social-icons-entrance-link">
+                                <img src="./img/icons/icon_google_login_2.svg" alt="icon-google">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="modal-body-entrance">
+                        <p class="modal-body-entrance-title">Или с паролем</p>>
+                        <form>
+                            <div class="form-group-entrance">
+                                <input type="email" class="form-control-entrance" id="email" placeholder="Введите email" required>
+                            </div>
+                            <div class="form-group-entrance">
+                                <input type="password" class="form-control-entrance" id="password" placeholder="Введите пароль" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary-entrance">ВОЙТИ</button>
+
+                            <a href="#" class="forgot-password-link-entrance">Забыли пароль?</a>
+                        </form>
+                        <p class="register-text">Еще нет аккаунта? <a href="#" class="register-link">Зарегистрироваться</a></p>
+
+                    </div>
+
+                    <div class="modal-policy-entrance">
+                        <p class="modal-policy-entrance-txt">
+                            Входя в аккаунт или создавая новый, вы соглашаетесь с нашими <a href="#" class="modal-policy-entrance-link">Правилами и условиями</a> и <a href="#" class="modal-policy-entrance-link">Положением о конфиденциальности</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно Вхід в кабінет. End -->
+
+        <!-- Модальне вікно Відновлення пароля. Start -->
+        <div class="modal-password-recovery">
+            <div class="modal-password-recovery-img">
+                <img src="./img/logo-FORMEN.svg" alt="icon-logo">
+            </div>
+            <div class="modal-dialog-password-recovery" style="max-width: 650px;">
+                <div class="modal-content-password-recovery">
+                    <div class="modal-header-password-recovery">
+                        <h2 class="modal-password-recovery-title">Восстановление пароля</h2>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body-password-recovery">
+                        <p>Для получения нового пароля введите адрес электронной почты, который был указан при регистрации. Мы отправим вам сообщение  с инструкциями по созданию нового пароля.</p>
+                        <form>
+                            <div class="form-group-password-recovery">
+                                <input type="email" class="form-control-password-recovery" id="recovery-email" placeholder="Введите email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary-password-recovery">Восстановить пароль</button>
+                        </form>
+                        <p class="remember-text">Уже помню! <a href="#" class="login-link-registration">Войти</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-password-recovery-success">
+            <div class="modal-password-recovery-success-img">
+                <img src="./img/logo-FORMEN.svg" alt="icon-logo">
+            </div>
+            <div class="modal-dialog-password-recovery-success" style="max-width: 650px;">
+                <div class="modal-content-password-recovery-success">
+                    <div class="modal-header-password-recovery-success">
+                        <h2 class="modal-password-recovery-success-title">Восстановление пароля</h2>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body-password-recovery-success">
+                        <p id="success-message">На ваш посчтовый ящик было отправлено сообщение. Следуйте инструкциям в сообщении, чтобы создать новый пароль.</p>
+                        <button type="button" class="btn btn-primary-password-recovery-success">ВСЕ ПОНЯТНО</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно Відновлення пароля. End -->
+
+
+
+        
+        <!-- Модальне вікно "Реєстрація" в кабінеті. Start -->
+        <div class="modal-registration">
+            <div class="modal-registration-img">
+                <img src="./img/logo-FORMEN.svg" alt="icon-logo">
+            </div>
+            <div class="modal-dialog-registration" style="max-width: 650px;">
+                <div class="modal-content-registration">
+                    <div class="modal-header-registration">
+                        <h2 class="modal-registration-title">Регистрация</h2>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p class="modal-registration-subtitle">через социальные сети</p>
+                        <div class="social-icons-registration">
+                            <a href="#" class="social-icons-registration-link">
+                                <img src="./img/icons/icon_facebook_login_2.svg" alt="icon-facebook">
+                            </a>
+                            <a href="#" class="social-icons-registration-link">
+                                <img src="./img/icons/icon_twitter_login_2.svg" alt="icon-twitter">
+                            </a>
+                            <a href="#" class="social-icons-registration-link">
+                                <img src="./img/icons/icon_google_login_2.svg" alt="icon-google">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-body-registration">
+                        <p class="modal-body-registration-title">Через электронную почту</p>
+                        <form>
+                            <div class="form-group-registration">
+                                <input type="text" class="form-control-registration" id="name" placeholder="Введите имя и фамилию" required> 
+                            </div>
+                            <div class="form-group-registration">
+                                <input type="tel" class="form-control-registration" id="phone" placeholder="Номер телефона" required>
+                            </div>
+                            <div class="form-group-registration">
+                                <input type="email" class="form-control-registration" id="email" placeholder="Ваш e-mail" required>
+                            </div>
+                            <div class="form-group-registration">
+                                <input type="password" class="form-control-registration" id="password" placeholder="Придумайте пароль" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary-registration">Зарегистрироваться</button>
+                        </form>
+                        <p class="login-text">Уже есть аккаунт? <a href="#" class="login-link">Войти</a></p>
+                    </div>
+
+                    <div class="modal-policy-registration">
+                        <p class="modal-policy-registration-txt">
+                            Входя в аккаунт или создавая новый, вы соглашаетесь с нашими <a href="#" class="modal-policy-registration-link">Правилами и условиями</a> и <a href="#" class="modal-policy-registration-link">Положением о конфиденциальности</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно "Реєстрація" в кабінеті. End -->
+
+        <!-- Модальне вікно "Вітання про успішну реєстрацію" в кабінеті. START -->
+        <div class="modal-registration-success">
+            <div class="modal-registration-success-img">
+                <img src="./img/logo-FORMEN.svg" alt="icon-logo">
+            </div>
+            <div class="modal-dialog-registration-success" style="max-width: 650px;">
+                <div class="modal-content-registration-success">
+                    <div class="modal-header-registration-success">
+                        <h2 class="modal-registration-success-title">Поздравляем!</h2>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body-registration-success">
+                        <p>Ваш аккаунт успешно зарегистрирован на сайте. Вы можете перейти к покупкам.</p>
+                        <a href="#" class="btn btn-primary-catalog">В КАТАЛОГ</a>
+                        <a href="#" class="btn btn-primary-login">В КАБИНЕТ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно "Вітання про успішну реєстрацію" в кабінеті. End -->
+
+        <!-- Модальне вікно пошук. Start -->
+        <div class="search-box-holder-row">
+            <form id="search-form" action="#">
+                <div class="search-box-popup">
+                    <div class="search-box-popup-content position-relative">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="width d-flex align-items-center">
+                                        <div class="search-box-close two"></div>
+                                        <div class="form-group search-box common position-relative">
+                                            <input type="text" id="search-input" class="form-control" placeholder="Поиск">
+                                            <span class="search-icon">
+                                                <img src="./img/icons/icon-search-Vector.png" alt="icon-search">
+                                            </span>
+                                            <button type="button" class="search-btn" onclick="searchItems()">НАЙТИ</button>
+                                        </div>
+                                        <div class="search-box-close one"><span>X</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+        <!-- Модальне вікно пошук. End -->
+        <!-- HTML: Результаты поиска -->
+        <div id="search-results" >
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+            
+                        <div class="search-collections-slider_wrapper">
+                            <div class="swiperten swiper mySwiper10">
+                                <div class="swiper-wrapper">
+
+                                    
+                    
+
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+
+        <!-- Сайдбар (початок) -->
+        <div class="burger-menu-desktop d-lg-block d-none">
+
+            <div class="burger-box-popup">
+                <div class="burger-menu-desctop-top-popup-content position-relative">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="width d-flex align-items-center">
+                                    <div class="burgermenu-box-close two"> </div>
+                                    <div class="form-group burgermenu-box common position-relative"> 
+                                        <div class="burger-menu-desctop-top">
+                                            <img src="./img/logo-FORMEN.svg" alt="logo" class="logo-burgermenu">
+                                        </div>
+                                    </div>
+                                    <div class="burgermenu-language-desctop">
+                                        <button class="laguage-desctop-btn">UA</button>
+                                        <button class="laguage-desctop-btn active">RU</button>
+                                    </div>
+
+                                    <div class="burgermenu-box-close one"> <span> X </span> </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="burgermenu-banner-desctop col-md-12">
+                        <img src="./img/Banner/banner_burger_desc_1.png" alt="img" class="burgermenubanner-img">
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="burgermenu-dropdown-desctop d-flex ">
+                                    <div class="burgermenu-list-wrapper col-md-4">
+                                        <h6>ПОКУПАТЕЛЮ</h6>
+                                        <ul class="burgermenu-list">
+                                            <li>
+                                                <a href="./page-help-placing.html">Оформление заказа</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-help-delivery.html">Оплата и доставка</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-help-exchange.html">Возврат и обмен</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-help-size.html">Размерная сетка</a>
+                                            </li>
+                                            <li>
+                                                <a href="./status.html">Статус заказа</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="burgermenu-list-wrapper col-md-4">
+                                        <h6>FOR MEN</h6>
+                                        <ul class="burgermenu-list">
+                                            <li>
+                                                <a href="./page-about.html">О нас</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-help-contacts.html">Контакты</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-help-stores.html">Наши магазины</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-rewiev.html">Отзывы и предложения</a>
+                                            </li>
+                                            <li>
+                                                <a href="./page-blog.html">Блог</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="burgermenu-list-wrapper col-md-4">
+                                        <h6>КОНТАКТ-ЦЕНТР</h6>
+                                        <ul class="burgermenu-list">
+                                            <li class="burgermenu-phone">
+                                                <a href="tel:+380669919969"><h4>+38(066) 991 9969</h4></a>
+                                            </li>
+                                            <li class="burgermenu-schedule">
+                                                <p>
+                                                    Пн-Пт с 10:00 до 18:00 <br>
+                                                    Сб-Вс Выходной
+                                                </p>
+
+                                            </li>
+                                        </ul>
+                                        <ul class="burgermenu-social d-flex align-items-center">
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img src="./img/icons/soc_icon_phone.svg" alt="number">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img src="./img/icons/soc_small_Icon_telegram.svg" alt="telegram">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img src="./img/icons/soc_icon_viber.svg" alt="viber">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <img src="./img/icons/soc_icon_whatsapp.svg" alt="whatsapp">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <!-- Сайдбар (кінець) -->
+
+
+        <!-- Мобільне меню (початок) -->
+        <div class="mobile-menu d-lg-none">
+            <div class="mobile-burgermenu-box-close-bg"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+        
+                        <div class="mobile-burgermenu-box-close one">
+                            <img src="./img/icons/arrow-left.png" alt="close">
+                        </div>
+        
+                        <div class="burgermenu-dropdown-mobile">
+                            <div class="mobile-menu-list-wrapper">
+                                <h6>ПОКУПАТЕЛЮ</h6>
+                                <ul class="mobile-menu-list">
+                                    <li>
+                                        <a href="./page-help-placing.html">Оформление заказа</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-help-delivery.html">Оплата и доставка</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-help-exchange.html">Возврат и обмен</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-help-size.html">Размерная сетка</a>
+                                    </li>
+                                    <li>
+                                        <a href="./status.html">Статус заказа</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="mobile-menu-list-wrapper">
+                                <h6>FOR MEN</h6>
+                                <ul class="mobile-menu-list">
+                                    <li>
+                                        <a href="./page-about.html">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-help-contacts.html">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-help-stores.html">Наши магазины</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-rewiev.html">Отзывы и предложения</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-blog.html">Блог</a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+                            <div class="mobile-menu-contact-list-wrapper">
+                                <h6>КОНТАКТ-ЦЕНТР</h6>
+                                <ul class="mobile-menu-list">
+                                    <li class="burgermenu-phone">
+                                        <a href="tel:+380669919969"><h4>+38(066) 991 9969</h4></a>
+                                    </li>
+                                    <li class="burgermenu-schedule">
+                                        <p>
+                                            Пн-Пт с 10:00 до 18:00 <br>
+                                            Сб-Вс Выходной
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-burgermenu-social d-flex align-items-center">
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="./img/icons/soc_icon_phone.svg" alt="number">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="./img/icons/soc_small_Icon_telegram.svg" alt="telegram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="./img/icons/soc_icon_viber.svg" alt="viber">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <img src="./img/icons/soc_icon_whatsapp.svg" alt="whatsapp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+        
+
+                            <div class="width d-flex align-items-center">
+                                <div class="burgermenu-language-mobile">
+                                    <button class="laguage-desctop-btn">UA</button>
+                                    <button class="laguage-desctop-btn active">RU</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="burgermenu-banner-mobile col-md-12">
+                <img src="./img/Banner/banner_burger_mobile_1.png" alt="img" class="burgermenubanner-img">
+            </div>
+        </div>
+        <!-- Мобільне меню (кінець) -->
+
+
+            
+        <div class="menu-buttom">
+            <div class="container">
+                <div class="desktop-menu">
+                    <ul class="page-dropdown-menu">
+                        <li class="dropdown-list ">
+                            <a href="./page-shop.html"> <h4>НОВИНКИ</h4> <span class="menuquantity">370</span> </a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="./page-shop.html"> <h4>ОДЕЖДА</h4> </a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="./page-shop.html"> <h4>ОБУВЬ</h4> </a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="./page-shop.html"> <h4>СУМКИ</h4> </a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="./page-shop.html"> <h4>АКСЕССУАРЫ</h4> </a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="./page-shop.html"> <h4>РАСПРОДАЖА</h4> </a>
+                        </li>
+                        <li class="dropdown-list">
+                            <a href="./page-formenua.html"> <h4>#FORMEN</h4> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- =====================
+    --- HEADER. END ---
+    ===================== -->
+
+
+
+
+
+
+
+
+    <!-- Wishlist Modal (ОБРАНЕ). START -->
+    <div class="modal fade wishlist-modal" id="wishlistModal" tabindex="-1" role="dialog" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrapper">
+                        <img src="./img/icons/add to wishlist.svg" alt="icon-heart">
+                        <span>45</span>
+                        <h5 class="modal-title" id="wishlistModalLabel">ИЗБРАННОЕ</h5>
+                    </div>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="wishlist-modal-wrapper">
+
+                        <!-- Перша картка товару -->
+                        <div class="checkout-product-card">
+                            <div class="checkout-product-card-image">
+                                <a href="#">
+                                    <img src="./img/card-images/photo_1.png" alt="Товар">
+                                </a>
+                            </div>
+                            <div class="checkout-product-card-details">
+                                <a href="#">
+                                    <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                                </a>
+                                <div class="checkout-product-card-prices">
+                                    <span class="checkout-old-price">2668 грн</span>
+                                    <span class="checkout-new-price">1700 грн</span>
+                                </div>
+        
+        
+                                <!-- Варіації. START -->
+                                <div class="checkout-product-card-variations">
+                                    <!-- Варіації по кольору. START -->
+                                    <div class="select-color">
+                                        <div class="select_header-color">
+                                            <div class="select_current-color" style="background-color: black;"></div>
+                                            <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-color">
+                                            <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                            <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                            <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                            <!-- Додайте інші кольори тут -->
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по кольору. END -->
+        
+                                    <!-- Варіації по розміру. START -->
+                                    <div class="select-size">
+                                        <div class="select_header-size">
+                                            <span class="select_current-size">XS</span>
+                                            <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-size">
+                                            <li class="select_item-size">XS</li>
+                                            <li class="select_item-size">S</li>
+                                            <li class="select_item-size">M</li>
+                                            <li class="select_item-size">L</li>
+                                            <li class="select_item-size">XL</li>
+                                            <li class="select_item-size">2XL</li>
+                                            <li class="select_item-size">3XL</li>
+                                            <li class="select_item-size">4XL</li>
+                                            <li class="select_item-size">5XL</li>
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по розміру. END -->
+        
+                                    <div class="wishlist-modal-wrapper_btn">
+                                        <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                    </div>
+                                </div>
+                                <!-- Варіації. END -->                           
+                            </div>
+        
+                            <div class="product-card">
+                                <button class="product-card-add-cart-img">
+                                    <img  src="./img/icons/icon_shopping-cart.svg" alt="icon-add-to-cart" class="wishlist-icon">
+                                </button>
+                            </div>
+                            
+                        </div>
+
+
+                        <!-- Друга картка товару -->
+                        <div class="checkout-product-card">
+                            <div class="checkout-product-card-image">
+                                <a href="#">
+                                    <img src="./img/card-images/photo_1.png" alt="Товар">
+                                </a>
+                            </div>
+                            <div class="checkout-product-card-details">
+                                <a href="#">
+                                    <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                                </a>
+                                <div class="checkout-product-card-prices">
+                                    <span class="checkout-old-price">2668 грн</span>
+                                    <span class="checkout-new-price">1700 грн</span>
+                                </div>
+        
+        
+                                <!-- Варіації. START -->
+                                <div class="checkout-product-card-variations">
+                                    <!-- Варіації по кольору. START -->
+                                    <div class="select-color">
+                                        <div class="select_header-color">
+                                            <div class="select_current-color" style="background-color: black;"></div>
+                                            <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-color">
+                                            <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                            <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                            <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                            <!-- Додайте інші кольори тут -->
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по кольору. END -->
+        
+                                    <!-- Варіації по розміру. START -->
+                                    <div class="select-size">
+                                        <div class="select_header-size">
+                                            <span class="select_current-size">XS</span>
+                                            <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-size">
+                                            <li class="select_item-size">XS</li>
+                                            <li class="select_item-size">S</li>
+                                            <li class="select_item-size">M</li>
+                                            <li class="select_item-size">L</li>
+                                            <li class="select_item-size">XL</li>
+                                            <li class="select_item-size">2XL</li>
+                                            <li class="select_item-size">3XL</li>
+                                            <li class="select_item-size">4XL</li>
+                                            <li class="select_item-size">5XL</li>
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по розміру. END -->
+        
+                                    <div class="wishlist-modal-wrapper_btn">
+                                        <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                    </div>
+                                </div>
+                                <!-- Варіації. END -->                           
+                            </div>
+        
+                            <div class="product-card">
+                                <button class="product-card-add-cart-img">
+                                    <img  src="./img/icons/icon_shopping-cart.svg" alt="icon-add-to-cart" class="wishlist-icon">
+                                </button>
+                            </div>
+                            
+                        </div>
+
+
+                        <!-- Третя картка товару -->
+                        <div class="checkout-product-card">
+                            <div class="checkout-product-card-image">
+                                <a href="#">
+                                    <img src="./img/card-images/photo_1.png" alt="Товар">
+                                </a>
+                            </div>
+                            <div class="checkout-product-card-details">
+                                <a href="#">
+                                    <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                                </a>
+                                <div class="checkout-product-card-prices">
+                                    <span class="checkout-old-price">2668 грн</span>
+                                    <span class="checkout-new-price">1700 грн</span>
+                                </div>
+        
+        
+                                <!-- Варіації. START -->
+                                <div class="checkout-product-card-variations">
+                                    <!-- Варіації по кольору. START -->
+                                    <div class="select-color">
+                                        <div class="select_header-color">
+                                            <div class="select_current-color" style="background-color: black;"></div>
+                                            <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-color">
+                                            <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                            <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                            <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                            <!-- Додайте інші кольори тут -->
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по кольору. END -->
+        
+                                    <!-- Варіації по розміру. START -->
+                                    <div class="select-size">
+                                        <div class="select_header-size">
+                                            <span class="select_current-size">XS</span>
+                                            <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-size">
+                                            <li class="select_item-size">XS</li>
+                                            <li class="select_item-size">S</li>
+                                            <li class="select_item-size">M</li>
+                                            <li class="select_item-size">L</li>
+                                            <li class="select_item-size">XL</li>
+                                            <li class="select_item-size">2XL</li>
+                                            <li class="select_item-size">3XL</li>
+                                            <li class="select_item-size">4XL</li>
+                                            <li class="select_item-size">5XL</li>
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по розміру. END -->
+        
+                                    <div class="wishlist-modal-wrapper_btn">
+                                        <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                    </div>
+                                </div>
+                                <!-- Варіації. END -->                           
+                            </div>
+        
+                            <div class="product-card">
+                                <button class="product-card-add-cart-img">
+                                    <img  src="./img/icons/icon_shopping-cart.svg" alt="icon-add-to-cart" class="wishlist-icon">
+                                </button>
+                            </div>
+                            
+                        </div>
+
+
+                        <!-- Четверта картка товару -->
+                        <div class="checkout-product-card">
+                            <div class="checkout-product-card-image">
+                                <a href="#">
+                                    <img src="./img/card-images/photo_1.png" alt="Товар">
+                                </a>
+                            </div>
+                            <div class="checkout-product-card-details">
+                                <a href="#">
+                                    <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                                </a>
+                                <div class="checkout-product-card-prices">
+                                    <span class="checkout-old-price">2668 грн</span>
+                                    <span class="checkout-new-price">1700 грн</span>
+                                </div>
+        
+        
+                                <!-- Варіації. START -->
+                                <div class="checkout-product-card-variations">
+                                    <!-- Варіації по кольору. START -->
+                                    <div class="select-color">
+                                        <div class="select_header-color">
+                                            <div class="select_current-color" style="background-color: black;"></div>
+                                            <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-color">
+                                            <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                            <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                            <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                            <!-- Додайте інші кольори тут -->
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по кольору. END -->
+        
+                                    <!-- Варіації по розміру. START -->
+                                    <div class="select-size">
+                                        <div class="select_header-size">
+                                            <span class="select_current-size">XS</span>
+                                            <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                        </div>
+                                        <ul class="select_body-size">
+                                            <li class="select_item-size">XS</li>
+                                            <li class="select_item-size">S</li>
+                                            <li class="select_item-size">M</li>
+                                            <li class="select_item-size">L</li>
+                                            <li class="select_item-size">XL</li>
+                                            <li class="select_item-size">2XL</li>
+                                            <li class="select_item-size">3XL</li>
+                                            <li class="select_item-size">4XL</li>
+                                            <li class="select_item-size">5XL</li>
+                                        </ul>
+                                    </div>
+                                    <!-- Варіації по розміру. END -->
+        
+                                    <div class="wishlist-modal-wrapper_btn">
+                                        <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                    </div>
+                                </div>
+                                <!-- Варіації. END -->                           
+                            </div>
+        
+                            <div class="product-card">
+                                <button class="product-card-add-cart-img">
+                                    <img  src="./img/icons/icon_shopping-cart.svg" alt="icon-add-to-cart" class="wishlist-icon">
+                                </button>
+                            </div>
+                            
+                        </div>
+
+
+
+                    </div>
+                    
+
+
+
+
+
+                    <div id="wishlistEmptyMessage">
+                        <div class="wishlist-no-saved-wrapper">
+                            <img class="no-saved-img" src="./img/icons/icon-sad.svg" alt="sad icon">
+                            <h3>Нет сохраненых товаров</h3>
+                            <p>Сохраните понравившиеся модели в избранное, чтобы не потерять их из вида.</p>
+                        </div>
+                        <button id="goToAccountBtn" class="btn btn-primary">ВОЙТИ В МОЙ КАБИНЕТ</button>
+                    </div>
+                    
+                    <!-- Спливаюче вікно для додавання товару у кошик -->
+                    <div id="cartNotification" class="cart-notification">
+                        <img src="./img/icons/icon_shopping-cart.svg" alt="icon-cart" class="cart-notification-icon">
+                        <span>Товар добавлен в корзину</span>
+                    </div>
+          
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal (ОБРАНЕ). END -->
+
+
+
+
+
+
+
+
+
+    <!-- Cart Modal(КОШИК). START -->    
+    <div class="modal fade cart-modal" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header-wrapper">
+                        <img class="cart-img" src="./img/icons/icon_shopping-cart.svg" alt="icon-cart">
+                        <span>3</span>
+                        <h5 class="modal-title" id="cartModalLabel">Кошик</h5>
+                    </div>
+                    
+                    <button type="button" class="close" aria-label="Close" id="closeCartModal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    <!-- Перша картка товару -->
+                    <div class="checkout-product-card">
+                        <div class="checkout-product-card-image">
+                            <a href="#">
+                                <img src="./img/card-images/photo_1.png" alt="Товар">
+                            </a>
+                        </div>
+                        <div class="checkout-product-card-details">
+                            <a href="#">
+                                <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                            </a>
+                            <div class="checkout-product-card-prices">
+                                <span class="checkout-old-price">2668 грн</span>
+                                <span class="checkout-new-price">1700 грн</span>
+                            </div>
+
+
+                        <!-- Варіації. START -->
+                        <div class="checkout-product-card-variations">
+                            <!-- Варіації по кольору. START -->
+                            <div class="select-color">
+                                <div class="select_header-color">
+                                    <div class="select_current-color" style="background-color: black;"></div>
+                                    <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-color">
+                                    <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                    <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                    <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                    <!-- Додайте інші кольори тут -->
+                                </ul>
+                            </div>
+                            <!-- Варіації по кольору. END -->
+
+                            <!-- Варіації по розміру. START -->
+                            <div class="select-size">
+                                <div class="select_header-size">
+                                    <span class="select_current-size">XS</span>
+                                    <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-size">
+                                    <li class="select_item-size">XS</li>
+                                    <li class="select_item-size">S</li>
+                                    <li class="select_item-size">M</li>
+                                    <li class="select_item-size">L</li>
+                                    <li class="select_item-size">XL</li>
+                                    <li class="select_item-size">2XL</li>
+                                    <li class="select_item-size">3XL</li>
+                                    <li class="select_item-size">4XL</li>
+                                    <li class="select_item-size">5XL</li>
+                                </ul>
+                            </div>
+                            <!-- Варіації по розміру. END -->
+
+                            <!-- Квонтіті інпут. START -->
+                            <div class="quantity-selector">
+                                <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                <button class="quantity-btn quantity-btn-minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn quantity-btn-plus">+</button>
+                            </div>
+                            <!-- Квонтіті інпут. END -->
+                        </div>
+                        <!-- Варіації. END -->                           
+                        
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-wishlist-img">
+                            <img src="./img/icons/add to wishlist.svg" alt="icon-wishlist" class="wishlist-icon">
+                        </div>
+                    </div>
+                    
+                    <!-- Контейнер для спливаючого повідомлення -->
+                    <div class="notification" id="wishlistNotification">
+                        <img id="wishlistNotificationIcon" src="" alt="notification-icon">
+                        <span id="wishlistNotificationText">Товар добавлен в избранное</span>
+                    </div>
+                </div>
+
+                <!-- Друга картка товару -->
+                <div class="checkout-product-card">
+                    <div class="checkout-product-card-image">
+                        <a href="#">
+                            <img src="./img/card-images/photo_1.png" alt="Товар">
+                        </a>
+                    </div>
+                    <div class="checkout-product-card-details">
+                        <a href="#">
+                            <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                        </a>
+                        <div class="checkout-product-card-prices">
+                            <span class="checkout-old-price">2668 грн</span>
+                            <span class="checkout-new-price">1700 грн</span>
+                        </div>
+
+
+                        <!-- Варіації. START -->
+                        <div class="checkout-product-card-variations">
+                            <!-- Варіації по кольору. START -->
+                            <div class="select-color">
+                                <div class="select_header-color">
+                                    <div class="select_current-color" style="background-color: black;"></div>
+                                    <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-color">
+                                    <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                    <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                    <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                    <!-- Додайте інші кольори тут -->
+                                </ul>
+                            </div>
+                            <!-- Варіації по кольору. END -->
+
+                            <!-- Варіації по розміру. START -->
+                            <div class="select-size">
+                                <div class="select_header-size">
+                                    <span class="select_current-size">XS</span>
+                                    <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-size">
+                                    <li class="select_item-size">XS</li>
+                                    <li class="select_item-size">S</li>
+                                    <li class="select_item-size">M</li>
+                                    <li class="select_item-size">L</li>
+                                    <li class="select_item-size">XL</li>
+                                    <li class="select_item-size">2XL</li>
+                                    <li class="select_item-size">3XL</li>
+                                    <li class="select_item-size">4XL</li>
+                                    <li class="select_item-size">5XL</li>
+                                </ul>
+                            </div>
+                            <!-- Варіації по розміру. END -->
+
+                            <!-- Квонтіті інпут. START -->
+                            <div class="quantity-selector">
+                                <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                <button class="quantity-btn quantity-btn-minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn quantity-btn-plus">+</button>
+                            </div>
+                            <!-- Квонтіті інпут. END -->
+                        </div>
+                        <!-- Варіації. END -->                           
+                        
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-wishlist-img">
+                            <img src="./img/icons/add to wishlist.svg" alt="icon-wishlist" class="wishlist-icon">
+                        </div>
+                    </div>
+                    
+                    <!-- Контейнер для спливаючого повідомлення -->
+                    <div class="notification" id="wishlistNotification">
+                        <img id="wishlistNotificationIcon" src="" alt="notification-icon">
+                        <span id="wishlistNotificationText">Товар добавлен в избранное</span>
+                    </div>
+                </div>
+
+                <!-- Третя картка товару -->
+                <div class="checkout-product-card">
+                    <div class="checkout-product-card-image">
+                        <a href="#">
+                            <img src="./img/card-images/photo_1.png" alt="Товар">
+                        </a>
+                    </div>
+                    <div class="checkout-product-card-details">
+                        <a href="#">
+                            <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                        </a>
+                        <div class="checkout-product-card-prices">
+                            <span class="checkout-old-price">2668 грн</span>
+                            <span class="checkout-new-price">1700 грн</span>
+                        </div>
+
+
+                        <!-- Варіації. START -->
+                        <div class="checkout-product-card-variations">
+                            <!-- Варіації по кольору. START -->
+                            <div class="select-color">
+                                <div class="select_header-color">
+                                    <div class="select_current-color" style="background-color: black;"></div>
+                                    <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-color">
+                                    <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                    <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                    <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                    <!-- інші кольори тут -->
+                                </ul>
+                            </div>
+                                <!-- Варіації по кольору. END -->
+
+                                <!-- Варіації по розміру. START -->
+                                <div class="select-size">
+                                    <div class="select_header-size">
+                                        <span class="select_current-size">XS</span>
+                                        <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                    </div>
+                                    <ul class="select_body-size">
+                                        <li class="select_item-size">XS</li>
+                                        <li class="select_item-size">S</li>
+                                        <li class="select_item-size">M</li>
+                                        <li class="select_item-size">L</li>
+                                        <li class="select_item-size">XL</li>
+                                        <li class="select_item-size">2XL</li>
+                                        <li class="select_item-size">3XL</li>
+                                        <li class="select_item-size">4XL</li>
+                                        <li class="select_item-size">5XL</li>
+                                    </ul>
+                                </div>
+                                <!-- Варіації по розміру. END -->
+
+                                <!-- Квонтіті інпут. START -->
+                                <div class="quantity-selector">
+                                    <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                    <button class="quantity-btn quantity-btn-minus">-</button>
+                                    <input type="text" class="quantity-input" value="1" readonly>
+                                    <button class="quantity-btn quantity-btn-plus">+</button>
+                                </div>
+                                <!-- Квонтіті інпут. END -->
+                            </div>
+                            <!-- Варіації. END -->                           
+                            
+                        </div>
+                        <!-- <div class="product-card-wishlist-img">
+                            <img src="./img/icons/add to wishlist.svg" alt="icon-wishlist" id="wishlist-icon-1">
+                        </div> -->
+
+                        <div class="product-card">
+                            <div class="product-card-wishlist-img">
+                                <img src="./img/icons/add to wishlist.svg" alt="icon-wishlist" class="wishlist-icon">
+                            </div>
+                        </div>
+                        
+                        <!-- Контейнер для спливаючого повідомлення -->
+                        <div class="notification" id="wishlistNotification">
+                            <img id="wishlistNotificationIcon" src="" alt="notification-icon">
+                            <span id="wishlistNotificationText">Товар добавлен в избранное</span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Четверта картка товару -->
+                <div class="checkout-product-card">
+                    <div class="checkout-product-card-image">
+                        <a href="#">
+                            <img src="./img/card-images/photo_1.png" alt="Товар">
+                        </a>
+                    </div>
+                    <div class="checkout-product-card-details">
+                        <a href="#">
+                            <h3 class="checkout-product-card-title">КОЖАНЫЙ БОМБЕР PUDOLI 7861</h3>
+                        </a>
+                        <div class="checkout-product-card-prices">
+                            <span class="checkout-old-price">2668 грн</span>
+                            <span class="checkout-new-price">1700 грн</span>
+                        </div>
+
+
+                        <!-- Варіації. START -->
+                        <div class="checkout-product-card-variations">
+                            <!-- Варіації по кольору. START -->
+                            <div class="select-color">
+                                <div class="select_header-color">
+                                    <div class="select_current-color" style="background-color: black;"></div>
+                                    <img class="select_icon-color" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-color">
+                                    <li class="select_item-color" data-color="black" style="background-color: black;"></li>
+                                    <li class="select_item-color" data-color="red" style="background-color: red;"></li>
+                                    <li class="select_item-color" data-color="blue" style="background-color: blue;"></li>
+                                    <!-- Додайте інші кольори тут -->
+                                </ul>
+                            </div>
+                            <!-- Варіації по кольору. END -->
+
+                            <!-- Варіації по розміру. START -->
+                            <div class="select-size">
+                                <div class="select_header-size">
+                                    <span class="select_current-size">XS</span>
+                                    <img class="select_icon-size" src="./img/icons/Icon_arrow-down.svg" alt="arrow-down">
+                                </div>
+                                <ul class="select_body-size">
+                                    <li class="select_item-size">XS</li>
+                                    <li class="select_item-size">S</li>
+                                    <li class="select_item-size">M</li>
+                                    <li class="select_item-size">L</li>
+                                    <li class="select_item-size">XL</li>
+                                    <li class="select_item-size">2XL</li>
+                                    <li class="select_item-size">3XL</li>
+                                    <li class="select_item-size">4XL</li>
+                                    <li class="select_item-size">5XL</li>
+                                </ul>
+                            </div>
+                            <!-- Варіації по розміру. END -->
+
+                            <!-- Квонтіті інпут. START -->
+                            <div class="quantity-selector">
+                                <button class="remove-cart-btn"><img src="./img/icons/icon_remove_card.svg" alt="remove"></button>
+                                <button class="quantity-btn quantity-btn-minus">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="quantity-btn quantity-btn-plus">+</button>
+                            </div>
+                            <!-- Квонтіті інпут. END -->
+                        </div>
+                        <!-- Варіації. END -->                           
+                        
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card-wishlist-img">
+                            <img src="./img/icons/add to wishlist.svg" alt="icon-wishlist" class="wishlist-icon">
+                        </div>
+                    </div>
+                    
+                    <!-- Контейнер для спливаючого повідомлення -->
+                    <div class="notification" id="wishlistNotification">
+                        <img id="wishlistNotificationIcon" src="" alt="notification-icon">
+                        <span id="wishlistNotificationText">Товар добавлен в избранное</span>
+                    </div>
+                </div>
+
+
+
+                    <div class="order-summary">
+                        <!-- Перша частина -->
+                        <div class="summary-prices">
+                            <div class="price-item">
+                                <span>Стоимость товаров:</span>
+                                <span class="price-item-cost">3400 грн</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Скидка:</span>
+                                <span class="price-item-cost">0 грн</span>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        
+                        <!-- Друга частина -->
+                        <div class="summary-promo">
+                            <div class="promo-body">
+                                <div class="promo-body-wrapper">
+                                    <!-- <label for="discount">Дисконт</label> -->
+                                    <input type="text" class="promo-input" placeholder="Дисконтная карта">
+                                </div>
+                                <button class="promo-btn">ПРИМЕНИТЬ</button>
+                            </div>
+                            <div class="promo-body">
+                                <div class="promo-body-wrapper">
+                                    <!-- <label for="sertificate">Сертификат</label> -->
+                                    <input type="text" class="promo-input" placeholder="Подарочный сертификат">
+                                </div>
+                                <button class="promo-btn">ПРИМЕНИТЬ</button>
+                            </div>
+                            <div class="promo-body">
+                                <div class="promo-body-wrapper">
+                                    <!-- <label for="promokod">Промокод</label> -->
+                                    <input type="text" class="promo-input" placeholder="Промокод">
+                                </div>
+                                <button class="promo-btn">ПРИМЕНИТЬ</button>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        
+                        <!-- Третя частина -->
+                        <div class="summary-total">
+                            <div class="total-amount">
+                                <h4>К ОПЛАТЕ:</h4>
+                                <h4>3400 грн</h4>
+                            </div>
+                            <button class="checkout-btn">ОФОРМИТЬ ПОКУПКУ</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Cart Modal(КОШИК). END -->
+
+
+    <main>
+        <!-- Модальне вікно. Видалення товару по кнопці "Видалити". + Модальне вікно. START -->
+        <div id="removeConfirmationCheckout" class="confirmation-checckout" style="display: none;">
+            <div class="confirmation-content-checkout">
+                <p>ВЫ ХОТИТЕ УДАЛИТЬ ТОВАР?</p>
+                <div class="confirmation-checkout-buttons">
+                    <button id="checkoutRemoveBtn">ДА</button>
+                    <button id="cancelcheckoutRemoveBtn">НЕТ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно. Видалення товару по кнопці "Видалити". + Модальне вікно. END -->
+
+        <section class="section-oops">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="oops-content">
+                            <img src="./img/404_oops.png" class="img-fluid" alt="404-img">
+                            <p class="oops-content-title">404</p>
+                            <div class="oops-content-subtitle">
+                                <p>Кажется что-то пошло не так</p>
+                            </div>
+                            
+                        </div>
+                        <div class="oops-content-btn">
+                            <a href="#" class="btn btn-secondary oops-btn-back">ВЕРНУТЬСЯ НАЗАД</a>
+                            <a href="./index.html" class="btn btn-primary oops-btn-home">НА ГЛАВНУЮ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    
+    <!--==== Js Scripts Start ====-->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Jquery v3.7.1 Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> <!-- bootstrap.js 5.0.2 Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper Js -->
+    <script src="./js/plugin/jquery.magnific-popup.min.js"></script> <!-- Magnific-popup Js -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script><!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script><!-- Popper -->
+    <!-- Підключення js-image-zoom з CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-image-zoom/1.4.0/js-image-zoom.min.js"></script>
+
+    <script src="./js/main.js"></script> <!-- Власний JavaScript файл -->
+
+    <!--==== Js Scripts End ====-->
+</body>
+</html>
