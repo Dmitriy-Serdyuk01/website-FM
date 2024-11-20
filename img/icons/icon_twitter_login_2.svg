@@ -1,0 +1,16 @@
+<svg width="88.000000" height="88.000000" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip71_9516">
+			<rect id="Icon/twitter" width="36.000000" height="36.000000" transform="translate(26.000000 26.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="socialnetwork" width="88.000000" height="88.000000" fill="#D94540" fill-opacity="1.000000"/>
+	<rect id="Rectangle 1327" width="88.000000" height="88.000000" fill="#0FADE5" fill-opacity="1.000000"/>
+	<rect id="Icon/twitter" width="36.000000" height="36.000000" transform="translate(26.000000 26.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip71_9516)">
+		<path id="Vector" d="M62 32.46C60.67 33.05 59.25 33.44 57.75 33.62C59.28 32.71 60.45 31.26 61 29.54C59.55 30.4 57.96 31 56.31 31.33C54.96 29.89 53.04 29 50.92 29C46.84 29 43.53 32.3 43.53 36.38C43.53 36.96 43.6 37.52 43.72 38.06C37.59 37.76 32.14 34.82 28.5 30.35C27.87 31.44 27.5 32.71 27.5 34.06C27.5 36.62 28.81 38.88 30.79 40.21C29.61 40.17 28.47 39.85 27.44 39.28C27.44 39.31 27.44 39.35 27.44 39.38C27.44 42.96 29.99 45.94 33.37 46.62C32.28 46.91 31.14 46.96 30.03 46.75C30.97 49.68 33.7 51.81 36.93 51.87C34.4 53.86 31.22 55.04 27.76 55.04C27.16 55.04 26.57 55 26 54.93C29.26 57.03 33.15 58.25 37.32 58.25C50.9 58.25 58.33 47 58.33 37.24C58.33 36.92 58.32 36.6 58.31 36.28C59.76 35.24 61 33.94 62 32.46Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

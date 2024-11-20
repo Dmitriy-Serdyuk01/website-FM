@@ -1,0 +1,14 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip92_5860">
+			<rect id="Icon/chevron-down" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Icon/chevron-down" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip92_5860)">
+		<path id="Vector (Stroke)" d="M5.29 8.29C5.68 7.9 6.31 7.9 6.7 8.29L12 13.58L17.29 8.29C17.68 7.9 18.31 7.9 18.7 8.29C19.09 8.68 19.09 9.31 18.7 9.7L12.7 15.7C12.31 16.09 11.68 16.09 11.29 15.7L5.29 9.7C4.9 9.31 4.9 8.68 5.29 8.29Z" fill="#252525" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

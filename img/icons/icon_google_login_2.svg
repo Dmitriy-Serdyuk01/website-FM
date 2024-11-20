@@ -1,0 +1,16 @@
+<svg width="88.000000" height="88.000000" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip71_9512">
+			<rect id="Icon/google" width="36.000000" height="36.000000" transform="translate(26.000000 26.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="socialnetwork" width="88.000000" height="88.000000" fill="#C22037" fill-opacity="1.000000"/>
+	<rect id="Rectangle 1327" width="88.000000" height="88.000000" fill="#C22037" fill-opacity="1.000000"/>
+	<rect id="Icon/google" width="36.000000" height="36.000000" transform="translate(26.000000 26.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip71_9512)">
+		<path id="Vector" d="M58.18 41.23C58.36 42.21 58.46 43.25 58.46 44.33C58.46 52.76 52.82 58.76 44.29 58.76C42.35 58.76 40.43 58.38 38.64 57.64C36.85 56.9 35.22 55.81 33.85 54.44C32.48 53.07 31.39 51.44 30.65 49.65C29.91 47.85 29.52 45.93 29.52 44C29.52 42.06 29.91 40.14 30.65 38.34C31.39 36.55 32.48 34.92 33.85 33.55C35.22 32.18 36.85 31.09 38.64 30.35C40.43 29.61 42.35 29.23 44.29 29.23C48.28 29.23 51.61 30.7 54.16 33.08L50 37.24L50 37.23C48.45 35.75 46.49 35 44.29 35C39.42 35 35.46 39.11 35.46 43.99C35.46 48.86 39.42 52.98 44.29 52.98C48.71 52.98 51.72 50.46 52.34 46.98L44.29 46.98L44.29 41.23L58.18 41.23L58.18 41.23Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
